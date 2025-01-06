@@ -1,0 +1,16 @@
+.header-wrapper,
+.wrapper {
+  max-width: 1216px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gray-ctn {
+  background-color: var(--gray_2);
+}
+
+.ctn-1152 {
+  .wrapper {
+    max-width: 1152px;
+  }
+}

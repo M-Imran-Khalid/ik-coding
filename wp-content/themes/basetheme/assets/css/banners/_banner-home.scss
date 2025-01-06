@@ -1,0 +1,116 @@
+.hero-home {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--spacer_96) 0;
+}
+.hero-home-content {
+  width: 63.16%;
+}
+
+.hero-home-image {
+  width: 26.32%;
+  padding: 0 var(--spacer_48) var(--spacer_48) 0;
+  box-sizing: border-box;
+  aspect-ratio: 280 / 322;
+  position: relative;
+  img {
+    position: relative;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: calc(100% - var(--spacer_48));
+    height: calc(100% - var(--spacer_48));
+    background-color: var(--gray_4);
+  }
+}
+
+.hero-home-info {
+  margin-top: var(--spacer_48);
+}
+
+.my-location {
+  line-height: 0.6;
+  margin-bottom: 8px;
+
+  a,
+  a:visited {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border: 0;
+    &:hover {
+      .location-icon {
+        svg {
+          path {
+            stroke: var(--gray_11);
+          }
+        }
+      }
+    }
+  }
+  .location-icon {
+    line-height: 0.6;
+    svg {
+      path {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.my-state {
+  position: relative;
+  padding-left: var(--spacer_36);
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--green);
+  }
+}
+
+.my-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.my-links-single {
+  a,
+  a:visited {
+    width: 36px;
+    height: 36px;
+    line-height: 0.6;
+    border: 2px solid var(--transparent);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      border-color: var(--gray_11);
+      svg {
+        path {
+          stroke: var(--gray_11);
+        }
+      }
+    }
+    svg {
+      max-width: 24px;
+      max-height: 24px;
+      path {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

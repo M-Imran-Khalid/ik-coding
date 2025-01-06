@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--gray_1);
+  color: var(--gray_8);
+  font-size: var(--font_size_16);
+  line-height: 1.5;
+}
+p {
+  margin: 0 0 30px;
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+::selection {
+  color: var(--gray_1);
+  background-color: var(--gray_12);
+}

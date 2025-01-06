@@ -1,0 +1,95 @@
+@media only screen and (min-width: 1004px) and (max-width: 1500px) {
+}
+
+@media only screen and (max-width: 1500px) {
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2100px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 1004px) and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 1180px) and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 1180px) and (max-width: 1439px) {
+}
+
+@media only screen and (min-width: 1180px) and (max-width: 1345px) {
+}
+
+@media only screen and (max-width: 1179px) {
+}
+
+@media only screen and (min-width: 1004px) and (max-width: 1179px) {
+}
+
+@media only screen and (max-width: 1003px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .h-flex {
+    display: block;
+  }
+
+  .col-584 {
+    width: 100%;
+  }
+
+  .site-logo {
+    a,
+    a:visited {
+      max-width: 160px;
+    }
+  }
+
+  .hero-home {
+    display: flex;
+    gap: 48px;
+  }
+
+  .hero-home-content {
+    width: 100%;
+    order: 2;
+  }
+
+  .hero-home-image {
+    order: 1;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px 20px;
+    aspect-ratio: 280 / 280;
+    &::before {
+      width: calc(100% - 0px);
+      height: calc(100% - 20px);
+    }
+  }
+}
+
+@media only screen and (min-width: 748px) and (max-width: 1003px) {
+}
+
+@media only screen and (max-width: 747px) {
+}
+@media only screen and (min-width: 601px) and (max-width: 747px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1003px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 560px) {
+}
+
+@media only screen and (max-width: 459px) {
+}
+.mobile-hide {
+  display: none;
+}
