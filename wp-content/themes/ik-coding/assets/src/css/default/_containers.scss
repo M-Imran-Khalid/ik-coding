@@ -1,0 +1,35 @@
+.header-wrapper,
+.wrapper {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dark-ctn {
+  background-color: var(--container_color_1);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--white);
+  }
+  p,
+  li {
+    color: var(--white_1);
+  }
+}
+
+.ctn-1152 {
+  .wrapper {
+    max-width: 1152px;
+  }
+}
+
+.full-width-ctn {
+  .wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}
