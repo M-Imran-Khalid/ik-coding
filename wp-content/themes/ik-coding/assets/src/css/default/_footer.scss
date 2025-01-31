@@ -1,0 +1,111 @@
+.widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.social-link {
+  a,
+  a:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.65;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    border: 0;
+    svg {
+      max-width: 16px;
+      max-height: 16px;
+      path {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      background-color: var(--white);
+      svg {
+        path {
+          // stroke: var(--orange);
+          fill: var(--orange);
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  padding: var(--spacer_48) 0;
+  border-top: 1px solid var(--border_color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  .footer-links {
+    width: calc(60% - 20px);
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: var(--spacer_48);
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.footer-links {
+  .widget-title {
+    color: var(--orange);
+    margin-bottom: var(--spacer_30);
+  }
+  ul {
+    margin: 0;
+    li {
+      padding: 0;
+      margin-bottom: 15px;
+      &::before {
+        display: none;
+      }
+      a,
+      a:visited {
+        border: 0;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: var(--orange_1);
+          opacity: 0.8;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.3s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+            background-color: var(--orange_1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  color: var(--orange_2);
+  width: 40%;
+}

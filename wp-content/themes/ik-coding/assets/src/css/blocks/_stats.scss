@@ -1,0 +1,17 @@
+.stats {
+  gap: 5%;
+  .stat-single {
+    width: 30%;
+    border-bottom: 1px solid var(--border_color);
+    padding-bottom: var(--spacer_36);
+  }
+}
+
+.stat-head {
+  margin-bottom: 24px;
+  span {
+    font-size: var(--heading_3);
+    font-weight: 600;
+    display: inline-block;
+  }
+}
