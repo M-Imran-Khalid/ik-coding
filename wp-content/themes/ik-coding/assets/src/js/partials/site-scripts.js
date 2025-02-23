@@ -33,3 +33,13 @@ jQuery( '.faq > .faq-head' ).on( 'click', function() {
     		jQuery( this ).siblings( '.faq-content' ).slideDown();
     	}
     } );
+
+    jQuery( '.video-popup' ).magnificPopup( {
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		autoplay: true,
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false,
+
+	} );

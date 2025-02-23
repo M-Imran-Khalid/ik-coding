@@ -5,6 +5,8 @@ body {
   color: var(--orange_1);
   font-size: var(--font_size_16);
   line-height: 1.25;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -242,6 +244,10 @@ h6,
   width: 100%;
 }
 
+.ctn-780 .wrapper {
+  max-width: 780px;
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -363,6 +369,11 @@ a:visited:hover {
 svg {
   width: 100%;
   height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .h-flex {
@@ -746,7 +757,7 @@ blockquote {
   bottom: clamp(1.125rem, 3.662vw + 0.267rem, 3.563rem);
 }
 
-.image-at-left {
+.image-at-right {
   flex-direction: row-reverse;
 }
 
@@ -763,34 +774,6 @@ blockquote {
 .iat-image {
   width: 36.19%;
   aspect-ratio: 440/520;
-}
-
-.image-bg .iat-image {
-  padding: var(--spacer_48) var(--spacer_48) 0 0;
-  box-sizing: border-box;
-  position: relative;
-  aspect-ratio: 440/520;
-}
-.image-bg .iat-image img {
-  position: relative;
-}
-.image-bg .iat-image::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: calc(100% - var(--spacer_48));
-  height: calc(100% - var(--spacer_48));
-  background-color: var(--gray_4);
-}
-.image-bg.image-at-left .iat-image {
-  padding: 0 0 var(--spacer_48) var(--spacer_48);
-}
-.image-bg.image-at-left .iat-image::before {
-  top: auto;
-  right: auto;
-  left: 0;
-  bottom: 0;
 }
 
 .logo-grid-inner {
@@ -1163,6 +1146,40 @@ blockquote {
 
 .faq-content {
   padding: 0 var(--spacer_36) var(--spacer_36);
+}
+
+.video-inner {
+  aspect-ratio: 780/450;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.video a,
+.video a:visited {
+  display: block;
+  border: 0;
+  padding: 0;
+}
+.video a:hover .video-btn,
+.video a:visited:hover .video-btn {
+  transform: scale(1.1);
+}
+
+.video-btn {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.video-btn-icon {
+  line-height: 0.65;
+}
+.video-btn-icon img {
+  max-width: 16px;
 }
 
 @media only screen and (max-width: 1003px) {
